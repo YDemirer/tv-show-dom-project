@@ -10,6 +10,20 @@
 
   <body>
     <div id="root">
+      <div class="search-wrapper">
+        <div>
+        <select id="dropdown-list">
+          <option hidden>Choose Episode</option>
+        </select>
+        </div>
+        <div id="search-count"></div>
+        <div>
+        <label for="search"></label>
+        <input type="search" id="search" placeholder="Search Episode">
+        </div>
+    </div>
+    <div id="list-of-episodes"></div>
+    <p>All the data has (originally) come from <a href="https://tvmaze.com/">TVMaze.com</a></p>
     </div>
 
     <!-- Loads a provided function called getAllEpisodes() which returns all episodes -->

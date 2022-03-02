@@ -1,3 +1,120 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Krona+One&display=swap');
 #root {
   color: red;
+}
+
+body {
+  background-color: #ECECEC;
+}
+
+#list-of-episodes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+
+}
+
+.divContainer {
+  color:black;
+  background-color: rgb(243, 241, 240);
+  border: 1px none rgb(0, 0, 0);
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 1.2em;
+  box-shadow: 0 0.9px 2.2px rgba(0, 0, 0, 0.039),
+    0 2.2px 5.3px rgba(0, 0, 0, 0.048), 0 4.1px 10px rgba(0, 0, 0, 0.052),
+    0 7.4px 17.9px rgba(0, 0, 0, 0.057), 0 13.8px 33.4px rgba(0, 0, 0, 0.067),
+    0 33px 80px rgba(0, 0, 0, 0.11);
+}
+
+h3 {
+  text-shadow: 4px 4px 2px rgba(0,0,0,0.1);
+  font-family: 'Fjalla One';
+  color: #32333c;
+}
+
+p {
+  font-family: roboto;
+  text-align: center;
+  color: #32333c;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+.search-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  background: #48a866;
+  letter-spacing: 1px;
+  height: 0.2fr;
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 5px;
+  box-shadow: 0 0.9px 2.2px rgba(0, 0, 0, 0.039),
+    0 2.2px 5.3px rgba(0, 0, 0, 0.048), 0 4.1px 10px rgba(0, 0, 0, 0.052),
+    0 7.4px 17.9px rgba(0, 0, 0, 0.057), 0 13.8px 33.4px rgba(0, 0, 0, 0.067),
+    0 33px 80px rgba(0, 0, 0, 0.11);align-items: center;
+}
+
+input:focus {
+  outline: none;
+}
+
+input:focus::placeholder {
+  opacity: 0.3;
+}
+
+input[id=search] {
+  border: none;
+  height: 45px;
+  text-align: center;
+  width: 30em;
+  background: #FDFCFB;
+  font-family: 'Fjalla One';
+  /* font-size: larger; */
+  color: #32333c;
+  outline: none;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+
+select {
+  border: none;
+  height: 45px;
+  text-align: center;
+  width: 30em;
+  background: #FDFCFB;
+  font-family: 'Fjalla One';
+  color: #32333c;
+  outline: none;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  max-height: 150px;
+  overflow-x: hidden;
+  overflow-y: auto; 
+}
+
+#search-count {
+  border: none;
+  height: auto;
+  text-align: center;
+  width: auto;
+  font-family: 'Fjalla One';
+  font-size:larger;
+  color: #ca0022;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+
+.hide {
+  display: none;
 }
