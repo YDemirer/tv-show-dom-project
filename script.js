@@ -42,18 +42,22 @@ function dropDownMenu (){
     }); 
 }
 
+dropDown.addEventListener("change", episodePage);
 function episodePage (event){
   let episodeChoice = event.target.value;
-
+  // console.log(`you clicked ${event.target.value}`);
   let showEpisode = document.createElement('h3');
     let listOfEpisodesContainer = document.getElementById('list-of-episodes');
-    // listOfEpisodesContainer.innerHTML = "";
+    listOfEpisodesContainer.innerHTML = "";
+    showEpisode.innerHTML =
     episodePage.textContent = `${episode.name} - S${episode.season
       .toString()
       .padStart(2, '0')
     }E${episode.number
       .toString()
       .padStart(2, '0')}`;
+dropDown.appendChild(episodeChoice);
+    console.log(showEpisode);
 }
 
 function makePageForEpisodes(episodeList) {
