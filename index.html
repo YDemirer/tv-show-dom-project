@@ -12,22 +12,28 @@
     <div id="root">
       <div class="search-wrapper">
         <div>
+        <select id="show-selector">
+          <option hidden>Select Show</option>
+        </select> 
         <select id="dropdown-list">
           <option hidden>Choose Episode</option>
         </select>
         </div>
         <div id="search-count"></div>
         <div>
+
         <label for="search"></label>
-        <input type="search" id="search" placeholder="Search Episode">
+        <input type="search" id="search" placeholder="Search Episode" autocomplete="off">
         </div>
     </div>
     <div id="list-of-episodes"></div>
+    <div id="choice-of-episode"></div>
     <p>All the data has (originally) come from <a href="https://tvmaze.com/">TVMaze.com</a></p>
     </div>
 
     <!-- Loads a provided function called getAllEpisodes() which returns all episodes -->
     <script src="episodes.js"></script>
+    <script src="shows.js"></script>
 
     <!-- Loads YOUR javascript code -->
     <script src="script.js"></script>
